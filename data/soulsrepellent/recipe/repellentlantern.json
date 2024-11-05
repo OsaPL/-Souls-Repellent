@@ -1,0 +1,27 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "111",
+    "121",
+    "131"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_nugget"
+    },
+    "2": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "3": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "id": "minecraft:bat_spawn_egg",
+    "components": {
+      "minecraft:custom_name": "{\"text\": \"Souls Repellent\", \"color\": \"aqua\", \"italic\": false}",
+      "minecraft:entity_data": "{\"id\":\"minecraft:armor_stand\", \"NoGravity\":1b,\"Marker\":1b,\"Invisible\":1b,\"Tags\":[\"lantern-spawner\"]}",
+      "minecraft:lore": ["{\"text\":\"Hold a soul lantern to see the affected area.\", \"color\": \"white\", \"italic\": false}"]
+    }
+  }
+}
