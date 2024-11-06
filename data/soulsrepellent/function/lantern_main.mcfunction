@@ -5,4 +5,4 @@ execute at @s unless block ~ ~ ~ soul_lantern run kill @e[type=item,limit=1,sort
 execute at @s unless block ~ ~ ~ soul_lantern run kill @s
 
 #Constant particles at lantern
-execute at @s if block ~ ~ ~ soul_lantern run particle minecraft:sculk_soul ~ ~0.35 ~0 0.2 0.2 0.2 0.005 1 normal
+execute at @s if block ~ ~ ~ soul_lantern run particle minecraft:sculk_soul ~ ~0.35 ~ 0.2 0.2 0.2 0.005 1 normal
