@@ -1,5 +1,5 @@
 #Tag all already existing mobs
-execute at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air at @s run tag @e[distance=0..128] add lantern-ignore
+execute at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air at @s run tag @e[tag=!lantern-remove,tag=!lantern-ignore,distance=0..128] add lantern-ignore
 
 execute at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air align xyz as @s run setblock ~ ~ ~ minecraft:soul_lantern
 
