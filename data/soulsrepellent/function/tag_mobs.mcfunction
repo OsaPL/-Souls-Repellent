@@ -38,5 +38,5 @@ tag @e[type=zoglin,tag=!lantern-hostile] add lantern-hostile
 tag @e[type=piglin,tag=!lantern-hostile] add lantern-hostile
 
 #Do distance checks vs lanterns
-execute as @e[tag=lantern-hostile,tag=!lantern-ignore] at @s run execute if entity @e[tag=lantern-main ,distance=..32] run tag @s add lantern-remove
-execute as @e[tag=lantern-hostile,tag=!lantern-ignore,tag=!lantern-remove] at @s run execute if entity @e[tag=lantern-main, distance=32..] run tag @s add lantern-ignore
+$execute as @e[tag=lantern-hostile,tag=!lantern-ignore] at @s run execute if entity @e[tag=lantern-main, distance=..$(range)] run tag @s add lantern-remove
+$execute as @e[tag=lantern-hostile,tag=!lantern-ignore,tag=!lantern-remove] at @s run execute unless entity @e[tag=lantern-main, distance=..$(range)] run tag @s add lantern-ignore
