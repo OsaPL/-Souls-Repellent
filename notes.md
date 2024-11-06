@@ -12,5 +12,3 @@
 # Nice-to-have
 - [x] `tick` if player holds another lantern ([SelectedItem check](https://gaming.stackexchange.com/a/357825))
 - [x] `tick` ...spawn particles in range (try `particle minecraft:soul_fire_flame ~ ~ ~ 0.5 0 0.5 0 1 normal`, also add `@p` at the end to define [viewers](https://minecraft.wiki/w/Commands/particle))
-
-## Flow
