@@ -1,6 +1,6 @@
 #If there is another one in this space, return
 execute at @s if entity @e[tag=lantern-main,distance=..0.7] run return run function soulsrepellent:return_lantern
-execute at @s if block ~ ~ ~ air if block ~ ~1 ~ chain align xyz as @s run setblock ~ ~ ~ minecraft:soul_lantern[hanging=true]
+execute at @s if block ~ ~ ~ air unless block ~ ~1 ~ air align xyz as @s run setblock ~ ~ ~ minecraft:soul_lantern[hanging=true]
 execute at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air align xyz as @s run setblock ~ ~ ~ minecraft:soul_lantern
 
 #If soul lantern is missing, return
